@@ -1,0 +1,32 @@
+{
+  "name": "tv-guardian",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "TV Guardian - Complete Private Smart TV Parental Control Application",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\" \"npm run dev:agent\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev:agent": "cd agent && npm run dev",
+    "build": "npm run build:client && npm run build:server && npm run build:agent",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "build:agent": "cd agent && npm run build",
+    "test": "npm run test:server && npm run test:client && npm run test:agent",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test",
+    "test:agent": "cd agent && npm test"
+  },
+  "keywords": [
+    "parental-control",
+    "smart-tv",
+    "sony-bravia",
+    "iot",
+    "screen-time",
+    "router-blocking"
+  ],
+  "author": "TV Guardian Architect",
+  "license": "MIT"
+}
+
